@@ -1,6 +1,3 @@
-
-import { NativeModules } from 'react-native';
-
-const { RNAndroidLifecycle } = NativeModules;
+import RNAndroidLifecycle from './lib';
 
 export default RNAndroidLifecycle;
