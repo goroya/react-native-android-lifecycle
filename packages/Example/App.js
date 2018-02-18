@@ -14,19 +14,19 @@ import {
 
 import RNAndroidLifeCycle from 'react-native-android-lifecycle';
 
-RNAndroidLifeCycle.on(RNAndroidLifeCycle.event.ON_NEW_INTENT, () => {
+RNAndroidLifeCycle.on(RNAndroidLifeCycle.EVENT.ON_NEW_INTENT, () => {
   console.log("ON_NEW_INTENT");
 });
-RNAndroidLifeCycle.on(RNAndroidLifeCycle.event.ON_ACTIVITY_RESULT, (e) => {
+RNAndroidLifeCycle.on(RNAndroidLifeCycle.EVENT.ON_ACTIVITY_RESULT, (e) => {
   console.log("ON_ACTIVITY_RESULT", e);
 });
-RNAndroidLifeCycle.on(RNAndroidLifeCycle.event.ON_HOST_RESUME, () => {
+RNAndroidLifeCycle.on(RNAndroidLifeCycle.EVENT.ON_HOST_RESUME, () => {
   console.log("ON_HOST_RESUME");
 });
-RNAndroidLifeCycle.on(RNAndroidLifeCycle.event.ON_HOST_PAUSE, () => {
+RNAndroidLifeCycle.on(RNAndroidLifeCycle.EVENT.ON_HOST_PAUSE, () => {
   console.log("ON_HOST_PAUSE");
 });
-RNAndroidLifeCycle.on(RNAndroidLifeCycle.event.ON_HOST_DESTROY, () => {
+RNAndroidLifeCycle.on(RNAndroidLifeCycle.EVENT.ON_HOST_DESTROY, () => {
   console.log("ON_HOST_DESTROY");
 });
 

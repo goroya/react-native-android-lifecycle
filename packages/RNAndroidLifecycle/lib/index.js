@@ -3,7 +3,7 @@ import { NativeModules } from 'react-native';
 import { DeviceEventEmitter } from 'react-native';
 const { RNAndroidLifecycle } = NativeModules;
 
-class JNAndroidLifecycle extends EventEmitter2 {
+class AndroidLifecycle extends EventEmitter2 {
   constructor(){
     super();
     const event = RNAndroidLifecycle.EVENT;
@@ -15,12 +15,12 @@ class JNAndroidLifecycle extends EventEmitter2 {
       }
     }
   }
-  get event() {
+  get EVENT() {
     return RNAndroidLifecycle.EVENT;
   }
 }
 function createInstance() {
-  return new JNAndroidLifecycle();
+  return new AndroidLifecycle();
 }
 const JSAndroidLifecycle = createInstance();
 JSAndroidLifecycle.create = function () {
