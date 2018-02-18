@@ -9,17 +9,10 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View,
-  Button
+  View
 } from 'react-native';
-import RNAndroidLifeCycle from 'react-native-android-lifecycle';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' +
-    'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+import RNAndroidLifeCycle from 'react-native-android-lifecycle';
 
 RNAndroidLifeCycle.on(RNAndroidLifeCycle.event.ON_NEW_INTENT, () => {
   console.log("ON_NEW_INTENT");
@@ -37,15 +30,15 @@ RNAndroidLifeCycle.on(RNAndroidLifeCycle.event.ON_HOST_DESTROY, () => {
   console.log("ON_HOST_DESTROY");
 });
 
+const instructions = Platform.select({
+  ios: 'Press Cmd+R to reload,\n' +
+    'Cmd+D or shake for dev menu',
+  android: 'Double tap R on your keyboard to reload,\n' +
+    'Shake or press menu button for dev menu',
+});
+
 type Props = {};
 export default class App extends Component<Props> {
-  async componentDidMount() {
-    console.log("componentDidMount");
-    console.log("END");
-  }
-  sendIntent(){
-    console.log("Push");
-  }
   render() {
     return (
       <View style={styles.container}>
@@ -58,12 +51,6 @@ export default class App extends Component<Props> {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
-        <Button
-          onPress={() => { this.sendIntent(123); }}
-          title="Learn More"
-          color="#841584"
-          accessibilityLabel="Learn more about this purple button"
-        />
       </View>
     );
   }
