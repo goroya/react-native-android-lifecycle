@@ -1,6 +1,6 @@
 {
   "name": "react-native-android-lifecycle",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "nativePackage": true,
   "description": "hock android lifecycle on react-native",
   "main": "index.js",
