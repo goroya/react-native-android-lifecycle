@@ -1,16 +1,29 @@
 {
   "name": "react-native-android-lifecycle",
   "version": "0.0.1",
+  "nativePackage": true,
   "description": "hock android lifecycle on react-native",
   "main": "index.js",
   "scripts": {
     "doc": "esdoc"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "android"
   ],
-  "author": "",
-  "license": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goroya/react-native-android-lifecycle"
+  },
+  "homepage": "https://github.com/goroya/react-native-android-lifecycle",
+  "bugs": {
+    "url": "https://github.com/goroya/react-native-android-lifecycle/issues"
+  },
+  "author": {
+    "name": "goroya.io",
+    "email": "goroyadevelop@gmail.com"
+  },
+  "license": "MIT",
   "peerDependencies": {
     "react-native": "^0.41.2"
   },
