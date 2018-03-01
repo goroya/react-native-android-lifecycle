@@ -1,5 +1,5 @@
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.androidlifecycle.reactnative.gogoroya">
+    package="com.gogoroya.reactnative.androidlifecycle">
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.reactlibrary
+package com.gogoroya.reactnative.androidlifecycle
 
 import android.app.Activity
 import android.content.Intent

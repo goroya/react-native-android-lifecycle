@@ -1,4 +1,4 @@
-package com.reactlibrary
+package com.gogoroya.reactnative.androidlifecycle
 
 import java.util.Arrays
 import java.util.Collections
